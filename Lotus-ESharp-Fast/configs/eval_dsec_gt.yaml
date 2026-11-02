@@ -1,0 +1,71 @@
+# Evaluate against GT; pass --validate-only --resume with stage1.checkpoint.
+seed: 2026
+output_dir: /path/to/runs/esharp_lotus_dsec_gt_evaluation
+model:
+  pretrained_path: /path/to/models/lotus-depth-d-v1-0
+stage1:
+  checkpoint: /path/to/models/esharp/lotus_dsec/step-00034000
+  freeze_backbone: false
+data:
+  marigold_root: /path/to/repository/Marigold-ESharp
+  marigold_config: config/eval_dsec_gt.yaml
+  base_data_dir: /path/to/data
+  input_key: rgb_norm
+  depth_key: depth_filled_norm
+  mask_key: valid_mask_filled
+  metric_target_key: depth_filled_linear
+  metric_mask_key: valid_mask_filled
+  num_workers: 4
+training:
+  batch_size: 8
+  gradient_accumulation_steps: 1
+  max_steps: 40000
+  timestep: 999
+  learning_rate: 3.0e-06
+  optimizer: adam
+  lr_scheduler:
+    total_iter: 40000
+    final_ratio: 0.02
+    warmup_steps: 200
+  max_grad_norm: 1.0
+  mixed_precision: fp16
+  gradient_checkpointing: true
+  checkpoint_every: 500
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  depth_loss_weight: 1.0
+  reconstruction_loss_weight: 1.0
+calibration:
+  enabled: true
+  hidden_dim: 32
+  t_max_m: 20.0
+  head_lr_scale: 3.0
+  lambda_st: 0.7
+  lambda_t: 1.0
+  lambda_metric: 0.3
+  warmup_iters: 0
+  ramp_iters: 500
+  apply_in_validation: true
+validation:
+  max_batches: null
+  every: 500
+  seed: 2026
+  metrics:
+  - clip_compare_abs_rel
+  - clip_compare_sq_rel
+  - clip_compare_rmse
+  - clip_compare_rmse_log
+  - clip_compare_silog
+  - clip_compare_delta1_acc
+  - clip_compare_delta2_acc
+  - clip_compare_delta3_acc
+visualization:
+  every: 2000
+  max_samples: 5
+  depth_vis_min_m: 2.0
+  depth_vis_max_m: 100.0
+logging:
+  report_to: none
+  project: diffused-lotus-dsec
+  entity: null
+  run_name: diffused-lotus-d-dsec-da2-lidar-old-nbin-stage2-calibration

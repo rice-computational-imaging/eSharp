@@ -1,0 +1,6 @@
+# Evaluate a Stage-I backbone without a calibration head on MVSEC GT.
+base_config:
+  - config/eval_mvsec_gt.yaml
+loss:
+  calibration:
+    enabled: false

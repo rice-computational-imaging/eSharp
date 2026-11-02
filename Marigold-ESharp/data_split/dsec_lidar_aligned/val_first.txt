@@ -1,0 +1,5 @@
+event3d/DSEC/train/nbin_3_encoding/zurich_city_05_a/0000000254.tif /path/to/user/git/Diffused-Remap/outputs/dsec_da2_lidar_pseudo_labels/zurich_city_05_a/frame508_pred_depth.npy
+event3d/DSEC/train/nbin_3_encoding/zurich_city_07_a/0000000135.tif /path/to/user/git/Diffused-Remap/outputs/dsec_da2_lidar_pseudo_labels/zurich_city_07_a/frame270_pred_depth.npy
+event3d/DSEC/train/nbin_3_encoding/zurich_city_08_a/0000000200.tif /path/to/user/git/Diffused-Remap/outputs/dsec_da2_lidar_pseudo_labels/zurich_city_08_a/frame400_pred_depth.npy
+event3d/DSEC/train/nbin_3_encoding/zurich_city_05_b/0000000043.tif /path/to/user/git/Diffused-Remap/outputs/dsec_da2_lidar_pseudo_labels/zurich_city_05_b/frame86_pred_depth.npy
+event3d/DSEC/train/nbin_3_encoding/interlaken_00_f/0000000720.tif /path/to/user/git/Diffused-Remap/outputs/dsec_da2_lidar_pseudo_labels/interlaken_00_f/frame1440_pred_depth.npy

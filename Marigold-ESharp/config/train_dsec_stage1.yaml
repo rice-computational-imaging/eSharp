@@ -1,0 +1,6 @@
+base_config:
+  - config/common.yaml
+  - config/dataset/dsec_pseudo.yaml
+
+augmentation:
+  center_crop_hw: [320, 640]

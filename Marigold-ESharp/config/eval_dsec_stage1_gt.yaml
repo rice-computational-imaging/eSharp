@@ -1,0 +1,6 @@
+# Evaluate a Stage-I backbone without a calibration head on DSEC GT.
+base_config:
+  - config/eval_dsec_gt.yaml
+loss:
+  calibration:
+    enabled: false

@@ -1,0 +1,4 @@
+/path/to/data/event3d/MVSEC_regen/nbin3/mvsec_outdoor_day1/0000000001.tif /path/to/data/event3d/MVSEC_regen/pesudo_depth_quantile_shift/mvsec_outdoor_day1/frame_0000000001_pred_depth.npy
+/path/to/data/event3d/MVSEC_regen/nbin3/mvsec_outdoor_day1/0000000002.tif /path/to/data/event3d/MVSEC_regen/pesudo_depth_quantile_shift/mvsec_outdoor_day1/frame_0000000002_pred_depth.npy
+/path/to/data/event3d/MVSEC_regen/nbin3/mvsec_outdoor_day1/0000000003.tif /path/to/data/event3d/MVSEC_regen/pesudo_depth_quantile_shift/mvsec_outdoor_day1/frame_0000000003_pred_depth.npy
+/path/to/data/event3d/MVSEC_regen/nbin3/mvsec_outdoor_day1/0000000004.tif /path/to/data/event3d/MVSEC_regen/pesudo_depth_quantile_shift/mvsec_outdoor_day1/frame_0000000004_pred_depth.npy

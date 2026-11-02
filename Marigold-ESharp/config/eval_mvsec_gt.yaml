@@ -1,0 +1,9 @@
+# Evaluate a calibration checkpoint on real MVSEC GT, with the head enabled.
+base_config:
+  - config/eval_mvsec_gt_base.yaml
+loss:
+  calibration:
+    enabled: true
+    hidden_dim: 32
+    t_max_m: 20.0
+    apply_in_validation: true

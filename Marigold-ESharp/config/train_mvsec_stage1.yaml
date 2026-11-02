@@ -1,0 +1,14 @@
+# Stage I: train the backbone without a calibration head.
+base_config:
+  - config/common.yaml
+  - config/dataset/mvsec_pseudo.yaml
+max_iter: 20000
+lr: 3.0e-6
+trainer:
+  validation_period: 500
+  visualization_period: 500
+eval:
+  alignment: absolute
+loss:
+  calibration:
+    enabled: false

@@ -1,0 +1,125 @@
+max_epoch: 200
+max_iter: 40000
+dataloader:
+  effective_batch_size: 8
+  max_train_batch_size: 4
+  num_workers: 2
+  seed: 2026
+model:
+  pretrained_path: marigold-v1-0-pretrained/stable-diffusion-2
+pipeline:
+  kwargs: null
+trainer:
+  name: MarigoldTrainer
+  init_seed: 2026
+  save_period: 500
+  backup_period: 2000
+  validation_period: 1000
+  visualization_period: 1000
+  training_noise_scheduler:
+    pretrained_path: marigold-v1-0-pretrained/stable-diffusion-2
+lr: 3.0e-06
+lr_scheduler:
+  kwargs:
+    total_iter: 40000
+    final_ratio: 0.02
+    warmup_steps: 200
+depth_normalization:
+  type: reversible_normalization
+  norm_min: -1.0
+  norm_max: 1.0
+  min_max_quantile: 0.02
+  clip: true
+  max_depth: 250.0
+augmentation:
+  lr_flip_p: 0.5
+  center_crop_hw:
+  - 320
+  - 640
+loss:
+  name: mse_loss
+  kwargs:
+    reduction: mean
+  edge_loss_alpha: 0.0
+  wasserstein:
+    enabled: false
+    weight: 0.05
+    num_projections: 100
+    rescaled: false
+    rescale_c: 500.0
+    apply_mask: false
+  affine_identity:
+    enabled: false
+    lambda_scale: 0.005
+    lambda_shift: 0.005
+    warmup_iters: 200
+    ramp_iters: 1000
+    eps: 1.0e-06
+    histogram_period: 200
+  calibration:
+    enabled: true
+    freeze_backbone: false
+    head_lr_scale: 3.0
+    hidden_dim: 32
+    t_max_m: 20.0
+    lambda_st: 0.7
+    lambda_t: 1.0
+    lambda_metric: 0.3
+    warmup_iters: 0
+    ramp_iters: 2000
+    histogram_period: 500
+    apply_in_validation: true
+gt_depth_type: depth_filled_norm
+gt_mask_type: valid_mask_filled
+multi_res_noise: null
+validation:
+  init_seed: 2026
+  denoising_steps: 10
+  ensemble_size: 1
+  processing_res: 0
+  match_input_res: true
+  resample_method: bilinear
+  main_val_metric: clip_compare_rmse
+  main_val_metric_goal: minimize
+eval:
+  log_std: false
+  eval_metrics:
+  - clip_compare_abs_rel
+  - clip_compare_sq_rel
+  - clip_compare_rmse
+  - clip_compare_rmse_log
+  - clip_compare_silog
+  - clip_compare_delta1_acc
+  - clip_compare_delta2_acc
+  - clip_compare_delta3_acc
+  alignment: absolute
+  align_max_res: null
+  compare_clip_min_m: 0.0
+  compare_clip_max_m: 80.0
+  compare_ignore_top_rows: 0
+  vis_magma_min_m: 2.0
+  vis_magma_max_m: 100.0
+logging:
+  format: '[%(asctime)s][%(levelname)s] %(message)s'
+  filename: train.log
+  file_level: 10
+  console_level: 20
+wandb:
+  project: marigold-dsec-finetune
+  entity: null
+dataset:
+  train:
+    name: mvsec
+    disp_name: dsec_da2_lidar_old_nbin_train
+    dir: .
+    filenames: data_split/dsec_lidar_aligned/train.txt
+  val:
+  - name: mvsec
+    disp_name: dsec_da2_lidar_old_nbin_val
+    dir: .
+    filenames: data_split/dsec_lidar_aligned/val_small.txt
+  vis:
+  - name: mvsec
+    disp_name: dsec_da2_lidar_old_nbin_vis_first
+    dir: .
+    filenames: data_split/dsec_lidar_aligned/val_first.txt

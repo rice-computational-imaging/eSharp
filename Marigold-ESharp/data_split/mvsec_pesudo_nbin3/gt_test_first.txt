@@ -1,0 +1,5 @@
+/path/to/data/event3d/MVSEC_regen/nbin3/mvsec_outdoor_night1/0000001352.tif event3d/mvsec/train/mvsec_outdoor_night1/depth/data/depth_0000001352.npy
+/path/to/data/event3d/MVSEC_regen/nbin3/mvsec_outdoor_day1/0000001362.tif event3d/mvsec/train/mvsec_outdoor_day1/depth/data/depth_0000001362.npy
+/path/to/data/event3d/MVSEC_regen/nbin3/mvsec_outdoor_night3/0000005331.tif event3d/mvsec/train/mvsec_outdoor_night3/depth/data/depth_0000005331.npy
+/path/to/data/event3d/MVSEC_regen/nbin3/mvsec_outdoor_night3/0000003977.tif event3d/mvsec/train/mvsec_outdoor_night3/depth/data/depth_0000003977.npy
+/path/to/data/event3d/MVSEC_regen/nbin3/mvsec_outdoor_night3/0000002605.tif event3d/mvsec/train/mvsec_outdoor_night3/depth/data/depth_0000002605.npy

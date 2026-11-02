@@ -1,0 +1,27 @@
+# Snapshot of direct event-training dependencies installed on the preparation server.
+# Not yet validated as a clean install or as the exact paper-run environment.
+# Install torch==2.4.0 and torchvision==0.19.0 separately; see README.md.
+accelerate==1.13.0
+diffusers==0.31.0
+transformers==4.41.2
+huggingface-hub==0.36.2
+numpy==2.2.6
+omegaconf==2.3.0
+scipy==1.15.3
+pandas==2.3.3
+matplotlib==3.10.8
+imageio==2.37.3
+pillow==12.2.0
+PyYAML
+opencv-python==4.13.0.92
+h5py==3.16.0
+tensorboard==2.20.0
+wandb==0.25.1
+safetensors==0.7.0
+tqdm==4.67.3
+torchmetrics==1.9.0
+# Required by Marigold's logging and TIFF event loaders; not recovered paper pins.
+tabulate
+tifffile
+# Marigold enables xFormers attention unconditionally; match the PyTorch pair above.
+xformers==0.0.27.post2

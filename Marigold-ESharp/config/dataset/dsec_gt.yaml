@@ -1,0 +1,16 @@
+dataset:
+  train:
+    name: dsec_event_disparity
+    disp_name: dsec_lidar_aligned_gt_train
+    dir: "."
+    filenames: data_split/dsec_lidar_aligned/gt_train.txt
+  val:
+    - name: dsec_event_disparity
+      disp_name: dsec_lidar_aligned_gt_val
+      dir: "."
+      filenames: data_split/dsec_lidar_aligned/gt_val.txt
+  vis:
+    - name: dsec_event_disparity
+      disp_name: dsec_lidar_aligned_gt_vis_first
+      dir: "."
+      filenames: data_split/dsec_lidar_aligned/gt_val_first.txt

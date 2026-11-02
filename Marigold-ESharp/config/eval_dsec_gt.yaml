@@ -1,0 +1,41 @@
+# Evaluate a DA2-lidar-aligned Stage-II model against real DSEC GT, not pseudo labels.
+base_config:
+  # - config/train_dsec_stage2.yaml
+  - config/train_dsec_stage1.yaml
+  - config/dataset/dsec_gt.yaml
+
+trainer:
+  validation_period: 0
+  visualization_period: 0
+
+augmentation:
+  center_crop_hw: [320, 640]
+
+dataset:
+  val:
+    - name: dsec_event_disparity
+      disp_name: dsec_da2_lidar_old_nbin_gt_val_crop320x640
+      dir: "."
+      filenames: data_split/dsec_lidar_aligned/gt_val.txt
+  vis:
+    - name: dsec_event_disparity
+      disp_name: dsec_da2_lidar_old_nbin_gt_vis_first_crop320x640
+      dir: "."
+      filenames: data_split/dsec_lidar_aligned/gt_val_first.txt
+      
+loss:
+  affine_identity:
+    enabled: false
+  calibration:
+    enabled: true
+    freeze_backbone: false
+    head_lr_scale: 3.0
+    hidden_dim: 32
+    t_max_m: 20.0
+    lambda_st: 0.7
+    lambda_t: 1.0
+    lambda_metric: 0.3
+    warmup_iters: 0
+    ramp_iters: 2000
+    histogram_period: 500
+    apply_in_validation: true

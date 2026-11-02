@@ -1,0 +1,16 @@
+dataset:
+  train:
+    name: mvsec
+    disp_name: dsec_da2_lidar_old_nbin_train
+    dir: "."
+    filenames: data_split/dsec_lidar_aligned/train.txt
+  val:
+    - name: mvsec
+      disp_name: dsec_da2_lidar_old_nbin_val
+      dir: "."
+      filenames: data_split/dsec_lidar_aligned/val_small.txt
+  vis:
+    - name: mvsec
+      disp_name: dsec_da2_lidar_old_nbin_vis_first
+      dir: "."
+      filenames: data_split/dsec_lidar_aligned/val_first.txt

@@ -1,0 +1,33 @@
+base_config:
+  - config/common.yaml
+  - config/dataset/dsec_pseudo.yaml
+
+# Stage II: joint finetuning of the Stage-I backbone and calibration head.
+lr: 3.0e-6
+
+trainer:
+  validation_period: 1000
+  visualization_period: 1000
+
+augmentation:
+  center_crop_hw: [320, 640]
+
+eval:
+  alignment: absolute
+
+loss:
+  affine_identity:
+    enabled: false
+  calibration:
+    enabled: true
+    freeze_backbone: false
+    head_lr_scale: 3.0
+    hidden_dim: 32
+    t_max_m: 20.0
+    lambda_st: 0.7
+    lambda_t: 1.0
+    lambda_metric: 0.3
+    warmup_iters: 0
+    ramp_iters: 2000
+    histogram_period: 500
+    apply_in_validation: true

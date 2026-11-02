@@ -1,0 +1,34 @@
+{
+  "lotus_dsec": {
+    "step": 34000,
+    "status": "author_selected_full_gt_metrics_not_verified",
+    "checkpoint": "models/esharp/lotus_dsec/step-00034000",
+    "config": "Lotus-ESharp-Fast/configs/eval_dsec_gt.yaml",
+    "validation_split": "Marigold-ESharp/data_split/dsec_lidar_aligned/gt_val.txt",
+    "target": "DSEC real GT disparity converted to metric depth"
+  },
+  "lotus_mvsec": {
+    "step": 19500,
+    "status": "author_selected_full_gt_metrics_not_verified",
+    "checkpoint": "models/esharp/lotus_mvsec/step-00019500",
+    "config": "Lotus-ESharp-Fast/configs/eval_mvsec_gt.yaml",
+    "validation_split": "Marigold-ESharp/data_split/mvsec_pesudo_nbin3/gt_test.txt",
+    "target": "MVSEC real GT depth"
+  },
+  "marigold_dsec": {
+    "step": 7000,
+    "status": "author_selected_full_gt_metrics_not_verified",
+    "checkpoint": "models/esharp/marigold_dsec/iter_007000",
+    "config": "Marigold-ESharp/config/eval_dsec_gt.yaml",
+    "validation_split": "Marigold-ESharp/data_split/dsec_lidar_aligned/gt_val.txt",
+    "target": "DSEC real GT disparity converted to metric depth"
+  },
+  "marigold_mvsec": {
+    "step": 8000,
+    "status": "author_selected_saved_historical_metrics_full_reproduction_pending",
+    "checkpoint": "models/esharp/marigold_mvsec/iter_008000",
+    "config": "Marigold-ESharp/config/eval_mvsec_gt.yaml",
+    "validation_split": "Marigold-ESharp/data_split/mvsec_pesudo_nbin3/gt_test.txt",
+    "target": "MVSEC real GT depth"
+  }
+}

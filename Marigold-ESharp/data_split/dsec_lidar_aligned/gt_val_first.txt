@@ -1,0 +1,5 @@
+event3d/DSEC/train/nbin_3_encoding/zurich_city_05_a/0000000254.tif event3d/DSEC/train/disparity_maps/zurich_city_05_a/disparity/event/000508.png
+event3d/DSEC/train/nbin_3_encoding/zurich_city_06_a/0000000756.tif event3d/DSEC/train/disparity_maps/zurich_city_06_a/disparity/event/001512.png
+event3d/DSEC/train/nbin_3_encoding/zurich_city_09_d/0000000321.tif event3d/DSEC/train/disparity_maps/zurich_city_09_d/disparity/event/000642.png
+event3d/DSEC/train/nbin_3_encoding/zurich_city_05_b/0000000043.tif event3d/DSEC/train/disparity_maps/zurich_city_05_b/disparity/event/000086.png
+event3d/DSEC/train/nbin_3_encoding/interlaken_00_f/0000000720.tif event3d/DSEC/train/disparity_maps/interlaken_00_f/disparity/event/001440.png

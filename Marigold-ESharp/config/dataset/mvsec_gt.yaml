@@ -1,0 +1,16 @@
+dataset:
+  train:
+    name: mvsec_gt
+    disp_name: mvsec_pesudo_nbin3_gt_train
+    dir: "."
+    filenames: data_split/mvsec_pesudo_nbin3/gt_train.txt
+  val:
+    - name: mvsec_gt
+      disp_name: mvsec_pesudo_nbin3_gt_val
+      dir: "."
+      filenames: data_split/mvsec_pesudo_nbin3/gt_test.txt
+  vis:
+    - name: mvsec_gt
+      disp_name: mvsec_pesudo_nbin3_gt_vis_first
+      dir: "."
+      filenames: data_split/mvsec_pesudo_nbin3/gt_test_first.txt
