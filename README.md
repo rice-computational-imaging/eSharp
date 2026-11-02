@@ -19,11 +19,15 @@ Paper link: to be added when available.
 this might needs to be changed due to retrained marigold
 
 DSEC
-<img width="924" height="457" alt="Screenshot 2026-11-01 at 10 46 18 PM" src="https://github.com/user-attachments/assets/def88560-dae7-4d27-b027-b80d1c7696d8" />
-MVSEC
+
 <img width="924" height="457" alt="Screenshot 2026-11-01 at 10 46 07 PM" src="https://github.com/user-attachments/assets/d86db78a-b831-490d-9507-f7a42bed80de" />
 
-zero shot ability
+MVSEC
+
+<img width="924" height="457" alt="Screenshot 2026-11-01 at 10 46 18 PM" src="https://github.com/user-attachments/assets/def88560-dae7-4d27-b027-b80d1c7696d8" />
+
+Zero Shot Result
+
 <img width="469" height="430" alt="Screenshot 2026-11-01 at 10 46 33 PM" src="https://github.com/user-attachments/assets/92debb02-0b67-4f9d-8d7c-d8a74f54905e" />
 
 
