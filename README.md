@@ -12,21 +12,18 @@ Paper link: to be added when available.
 
 ## Pipeline
 
-The final paper pipeline figure is not yet included. It should be added under
-`assets/` with its paper caption once the authoritative figure is identified.
+<img width="924" height="482" alt="Screenshot 2026-11-01 at 10 43 31 PM" src="https://github.com/user-attachments/assets/77ee0c34-ea59-49f4-9c13-81baa6539750" />
 
 ## Qualitative results
 
-The paper's event input, prediction, GT and comparison panels are not yet
-included. Add the original panels under `assets/`, using a consistent depth
-color scale and identifying the corresponding dataset and checkpoint.
+this might needs to be changed due to retrained marigold
+<img width="924" height="526" alt="Screenshot 2026-11-01 at 10 44 09 PM" src="https://github.com/user-attachments/assets/1f6e35a2-762c-47ab-9bc2-fb99a523c890" />
+
 
 ## Quantitative results
 
-Paper-reported numbers and independently reproduced results are not yet included.
-Add the paper table with each dataset's split and checkpoint; keep any numbers
-recomputed with this release in a separately labelled table. Evaluation commands
-and checkpoint layout are described in [the checkpoint guide](docs/CHECKPOINTS.md).
+<img width="924" height="526" alt="Screenshot 2026-11-01 at 10 44 09 PM" src="https://github.com/user-attachments/assets/1f6e35a2-762c-47ab-9bc2-fb99a523c890" /><img width="924" height="253" alt="Screenshot 2026-11-01 at 10 44 58 PM" src="https://github.com/user-attachments/assets/f174c5a9-37ab-41d3-899e-01412f6fc7f6" />
+
 
 ## Layout
 
