@@ -17,11 +17,18 @@ Paper link: to be added when available.
 ## Qualitative results
 
 this might needs to be changed due to retrained marigold
-<img width="924" height="526" alt="Screenshot 2026-11-01 at 10 44 09 PM" src="https://github.com/user-attachments/assets/1f6e35a2-762c-47ab-9bc2-fb99a523c890" />
+
+DSEC
+<img width="924" height="457" alt="Screenshot 2026-11-01 at 10 46 18 PM" src="https://github.com/user-attachments/assets/def88560-dae7-4d27-b027-b80d1c7696d8" />
+MVSEC
+<img width="924" height="457" alt="Screenshot 2026-11-01 at 10 46 07 PM" src="https://github.com/user-attachments/assets/d86db78a-b831-490d-9507-f7a42bed80de" />
+
+zero shot ability
+<img width="469" height="430" alt="Screenshot 2026-11-01 at 10 46 33 PM" src="https://github.com/user-attachments/assets/92debb02-0b67-4f9d-8d7c-d8a74f54905e" />
 
 
 ## Quantitative results
-
+<img width="924" height="526" alt="Screenshot 2026-11-01 at 10 44 09 PM" src="https://github.com/user-attachments/assets/1f6e35a2-762c-47ab-9bc2-fb99a523c890" />
 <img width="924" height="526" alt="Screenshot 2026-11-01 at 10 44 09 PM" src="https://github.com/user-attachments/assets/1f6e35a2-762c-47ab-9bc2-fb99a523c890" /><img width="924" height="253" alt="Screenshot 2026-11-01 at 10 44 58 PM" src="https://github.com/user-attachments/assets/f174c5a9-37ab-41d3-899e-01412f6fc7f6" />
 
 
