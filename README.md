@@ -10,6 +10,8 @@ checkpoints, and experiment logs are intentionally not included.
 
 Paper link: to be added when available.
 
+[Model checkpoints](https://huggingface.co/Rogerdai2026/esharp-checkpoints)
+
 ## Pipeline
 
 <img width="924" height="482" alt="Screenshot 2026-11-01 at 10 43 31 PM" src="https://github.com/user-attachments/assets/77ee0c34-ea59-49f4-9c13-81baa6539750" />
