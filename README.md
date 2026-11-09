@@ -18,8 +18,6 @@ Paper link: to be added when available.
 
 ## Qualitative results
 
-this might needs to be changed due to retrained marigold
-
 DSEC
 
 <img width="924" height="457" alt="Screenshot 2026-11-01 at 10 46 07 PM" src="https://github.com/user-attachments/assets/d86db78a-b831-490d-9507-f7a42bed80de" />
