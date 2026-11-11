@@ -169,8 +169,3 @@ same run with its existing optimizer state.
 
 This release builds on Marigold and Lotus. Their licenses and upstream attribution
 files are retained in each backend directory.
-
-## Citation
-
-The final paper citation has not yet been supplied. Preserve the upstream
-Marigold and Lotus attribution when adding the ESharp citation.
