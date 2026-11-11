@@ -32,9 +32,8 @@ Zero Shot Result
 
 
 ## Quantitative results
-this might needs to be changed due to retrained marigold
 
-<img width="924" height="526" alt="Screenshot 2026-11-01 at 10 44 09 PM" src="https://github.com/user-attachments/assets/1f6e35a2-762c-47ab-9bc2-fb99a523c890" /><img width="924" height="253" alt="Screenshot 2026-11-01 at 10 44 58 PM" src="https://github.com/user-attachments/assets/f174c5a9-37ab-41d3-899e-01412f6fc7f6" />
+<img width="901" height="549" alt="Screenshot 2026-11-11 at 2 14 29 PM" src="https://github.com/user-attachments/assets/edaf8006-df80-4902-b707-9bf918a74cdc" />
 
 
 ## Layout
